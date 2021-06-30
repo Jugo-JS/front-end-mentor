@@ -16,6 +16,29 @@
 body {
   font-family: "Spartan", sans-serif;
   font-size: 15px;
+  position: relative;
+}
+
+.bg-top {
+  background-image: url("./images/bg-pattern-top-desktop.svg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.bg-bottom {
+  background-image: url("./images/bg-pattern-bottom-desktop.svg");
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  bottom: -100px;
+  right: -275px;
+  z-index: -1;
 }
 
 .grid-container {
@@ -141,11 +164,28 @@ span {
 
 .testimonial p {
   grid-area: b;
+  font-size: 14px;
   color: var(--light-grey);
   line-height: 1.4;
 }
 
 @media (max-width: 900px) {
+  .bg-top {
+    background-image: url("./images/bg-pattern-top-mobile.svg");
+    position: absolute;
+    width: 500px;
+    top: -110px;
+    left: 0px;
+  }
+
+  .bg-bottom {
+    background-image: url("./images/bg-pattern-bottom-mobile.svg");
+
+    position: absolute;
+    bottom: 0;
+    height: 50%;
+  }
+
   .grid-container {
     display: flex;
     flex-direction: column;
