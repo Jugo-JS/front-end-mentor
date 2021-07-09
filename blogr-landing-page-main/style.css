@@ -7,9 +7,7 @@
 body {
   background-color: hsl(240, 2%, 79%);
   font-size: 16px;
-  /* font-family: "Ubuntu", sans-serif; */
   font-family: "Overpass", sans-serif;
-  /* overflow-x: hidden; */
 }
 
 h1,
@@ -20,7 +18,6 @@ h5,
 h6 {
   color: hsl(208, 49%, 24%);
   font-weight: 600;
-  /* font-family: "Overpass", sans-serif; */
 }
 
 li {
@@ -67,6 +64,7 @@ button:hover {
   background-position-x: -400px, center;
   background-position-y: center, center;
   border-bottom-left-radius: 100px;
+  overflow: hidden;
 }
 
 .container {
@@ -472,7 +470,6 @@ footer {
 @media screen and (max-width: 800px) {
   .intro {
     width: 100vw;
-    flex-shrink: 1;
     height: fit-content;
   }
   .nav-left {
@@ -501,7 +498,6 @@ footer {
     background-position-x: 0;
     background-position-y: 125px;
     background-repeat: no-repeat;
-    margin-bottom: 250px;
     margin: 100px auto;
   }
 
@@ -535,6 +531,10 @@ footer {
 
   .img {
     margin-top: -275px;
+  }
+
+  .img img {
+    width: 100vw;
   }
 
   .main-3 {
