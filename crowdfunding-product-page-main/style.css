@@ -1,0 +1,224 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Commissioner", sans-serif;
+  font-size: 16px;
+  background-color: rgb(235, 235, 235);
+  font-size: 400;
+}
+
+p {
+  color: hsl(0, 0%, 48%);
+}
+
+button {
+  background-color: hsl(176, 50%, 47%);
+  border-radius: 50px;
+  border: none;
+  padding: 1rem 1.75rem;
+  min-width: 10rem;
+  color: white;
+}
+
+header {
+  background-image: url(./images/image-hero-desktop.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 3rem;
+  height: 40vh;
+}
+
+nav {
+  width: 80vw;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  margin-left: 1.5rem;
+}
+
+.container {
+  width: 50vw;
+  margin: -50px auto 100px auto;
+  text-align: center;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+}
+
+.intro {
+  background-color: white;
+  border-radius: 10px;
+  padding: 3rem 2rem;
+  position: relative;
+}
+
+.intro h2 {
+  margin-bottom: 1rem;
+}
+
+.intro p {
+  margin-bottom: 1.5rem;
+}
+
+.intro-logo {
+  position: absolute;
+  top: -30px;
+  right: 45%;
+}
+
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bookmark {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.bookmark-icon {
+  position: absolute;
+  height: 100%;
+  left: 0;
+}
+
+#bookmark-button {
+  background-color: rgb(235, 235, 235);
+  color: hsl(0, 0%, 48%);
+  text-align: right;
+}
+
+.count {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 3fr 1fr;
+  row-gap: 1.5rem;
+}
+
+.money {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  text-align: left;
+  border-right: 1px solid rgb(235, 235, 235);
+  margin-right: 2rem;
+}
+
+.backers {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  text-align: left;
+  border-right: 1px solid rgb(235, 235, 235);
+  margin-right: 2rem;
+}
+
+.days {
+  grid-column: 3/4;
+  grid-row: 1/2;
+  text-align: left;
+}
+
+.line {
+  grid-column: 1/4;
+  grid-row: 2/3;
+  width: 100%;
+  height: 10px;
+  background-color: rgb(235, 235, 235);
+  border-radius: 10px;
+  align-self: center;
+}
+
+.blue-line {
+  width: 89%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: hsl(176, 50%, 47%);
+}
+
+.about {
+  background-color: white;
+  border-radius: 10px;
+  padding: 2rem 2rem;
+  text-align: left;
+}
+
+.about-intro h3 {
+  margin-bottom: 2rem;
+}
+
+.about-intro p {
+  margin-bottom: 1.75rem;
+}
+
+.card {
+  border: 1px solid rgb(235, 235, 235);
+  border-radius: 10px;
+  padding: 2rem 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.card-body {
+  margin-bottom: 2rem;
+}
+
+.card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.pledge {
+  color: hsl(176, 50%, 47%);
+  font-size: 500;
+}
+
+span {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.mahogany {
+  opacity: 0.6;
+}
+
+.mahogany button {
+  background-color: hsl(0, 0%, 48%);
+}
