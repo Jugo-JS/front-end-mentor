@@ -23,6 +23,11 @@ button {
   min-width: 10rem;
   color: white;
   cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: hsl(176, 72%, 28%);
 }
 
 .flex {
@@ -362,3 +367,28 @@ article p {
 }
 
 /* End of Modal */
+
+/* Succes Modal */
+.success-modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.success-modal-container {
+  background-color: white;
+  border-radius: 10px;
+  height: fit-content;
+  width: 40vw;
+  padding: 2rem;
+  flex-direction: column;
+}
+
+.success-modal-container article {
+  text-align: center;
+  margin: 1rem auto;
+}
