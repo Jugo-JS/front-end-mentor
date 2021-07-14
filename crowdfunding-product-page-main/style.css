@@ -9,6 +9,7 @@ body {
   font-size: 16px;
   background-color: rgb(235, 235, 235);
   font-weight: 400;
+  /* overflow: hidden; */
 }
 
 p {
@@ -298,7 +299,8 @@ span {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  display: none;
+  display: block;
+  overflow: scroll;
 }
 
 .modal-container {
@@ -349,9 +351,8 @@ article p {
   border-radius: 10px;
   display: grid;
   padding-top: 1rem;
-  padding-right: 2rem;
   grid-template-columns: 1fr 8fr 1fr;
-  grid-template-rows: 1fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .radio {
@@ -372,29 +373,45 @@ article p {
   grid-row: 1/2;
 
   justify-content: flex-start;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.label:hover {
+  color: hsl(176, 50%, 47%);
 }
 
 .label-left {
   grid-column: 3/4;
   grid-row: 1/2;
   justify-content: flex-end;
+  padding-right: 1.5rem;
 }
 
 .paragraph {
   grid-column: 2/4;
   grid-row: 2/3;
+  padding-right: 1rem;
+  margin-bottom: 1rem;
+  line-height: 1.5;
 }
 
 .modal-card-bottom {
   grid-column: 1/4;
   grid-row: 3/4;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   border-top: 1px solid rgb(235, 235, 235);
-  margin-top: 1rem;
-  padding: 1rem 1.25rem;
   display: none;
+  width: 100%;
+}
+
+.modal-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* margin-top: 1rem; */
+  padding: 1rem 1.5rem;
+  height: 100%;
+  width: 100%;
 }
 
 .input-number {
@@ -473,6 +490,48 @@ article p {
   .left {
     margin-bottom: 1rem;
   }
+
+  .modal-container {
+    width: 80vw;
+  }
+  .modal-card {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .radio {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+  .label {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    row-gap: 0.25rem;
+  }
+  .modal-span {
+    margin: 0;
+  }
+  .label-left {
+    grid-column: 1/3;
+    grid-row: 3/4;
+    padding: 0 1.5rem;
+    justify-content: flex-start;
+  }
+  .paragraph {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    padding: 0 1.5rem;
+  }
+  .modal-card-bottom {
+    grid-column: 1/3;
+    grid-row: 4/5;
+  }
+  .modal-flex {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 500px) {
@@ -536,4 +595,8 @@ article p {
   .container {
     margin: 0 auto;
   }
+}
+
+.active {
+  display: block;
 }
