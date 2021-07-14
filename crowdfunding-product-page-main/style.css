@@ -169,13 +169,14 @@ li a {
 .bookmark-icon {
   position: absolute;
   height: 100%;
-  left: 0;
+  left: -10px;
+  top: 0;
 }
 
 #bookmark-button {
   background-color: rgb(235, 235, 235);
   color: hsl(0, 0%, 48%);
-  text-align: right;
+  text-align: center;
 }
 
 .count {
