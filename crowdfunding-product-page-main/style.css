@@ -58,6 +58,15 @@ nav {
   right: 0;
   top: 2.5px;
   display: none;
+  cursor: pointer;
+}
+
+.close-menu {
+  position: absolute;
+  right: 0;
+  top: 2.5px;
+  display: none;
+  cursor: pointer;
 }
 
 .mobile-menu {
