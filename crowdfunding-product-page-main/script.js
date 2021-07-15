@@ -14,6 +14,7 @@ const closeSelectionModal = document.querySelector('.close-modal')
 const modalCards = document.querySelectorAll('.modal-card')
 const labels = document.querySelectorAll('.label')
 const modalCardBottom = document.querySelectorAll('.modal-card-bottom')
+const radioBtns = document.querySelectorAll('.radio-input')
 
 hamburger.addEventListener('click', function() {
     mobileMenu.style.display = 'block'
@@ -48,17 +49,26 @@ backButton.addEventListener('click', function() {
 
 labels.forEach((label, index) => {
     label.addEventListener('click', function() {
-        modalCardBottom.forEach((item, i) => {
-            if(index === i) {
-                item.classList.toggle('active')
-                modalCards.forEach((card, j) => {
-                    if(j === i && item.classList.contains('active')) {
-                        card.style.border = '2px solid hsl(176, 50%, 47%)'
-                    } else {
-                        card.style.border = '1px solid rgb(235, 235, 235)'
-                    }
-                })
-            } 
-        })
+        modalCardBottom[index].classList.toggle('active')
+        if(modalCardBottom[index].classList.contains('active')) {
+            modalCards[index].style.border = '2px solid hsl(176, 50%, 47%)'
+            radioBtns[index].checked =  true
+        } else {
+            modalCards[index].style.border = '1px solid rgb(235, 235, 235)'
+            radioBtns[index].checked =  false
+        }       
+    })  
+})
+
+radioBtns.forEach((btn, i) => {
+    btn.addEventListener('click', function() {
+        if(btn.checked) {
+            modalCardBottom[i].classList.add('active')
+            modalCards[i].style.border = '2px solid hsl(176, 50%, 47%)'
+        }
+        if(!btn.checked) {
+            modalCardBottom[i].classList.remove('active')
+            modalCards[i].style.border = '1px solid rgb(235, 235, 235)'
+        }
     })
 })
