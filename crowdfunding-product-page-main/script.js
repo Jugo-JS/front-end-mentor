@@ -16,6 +16,15 @@ const labels = document.querySelectorAll('.label')
 const modalCardBottom = document.querySelectorAll('.modal-card-bottom')
 const radioBtns = document.querySelectorAll('.radio-input')
 
+const selectBtns = document.querySelectorAll('.selectBtn')
+
+const continueBtns = document.querySelectorAll('.continueBtn')
+const successModal = document.querySelector('.success-modal')
+const finishBtn = document.querySelector('.finish')
+
+const collectedMoney = Number(document.getElementById('money').textContent)
+const totalAmount = Number(document.getElementById('totalAmount').textContent)
+
 hamburger.addEventListener('click', function() {
     mobileMenu.style.display = 'block'
     hamburger.style.display = 'none'
@@ -38,14 +47,17 @@ bookmarkButton.addEventListener('click', function() {
     bookmarkButton.textContent = 'Bookmarked'
 })
 
-backButton.addEventListener('click', function() {
+const mainModal = () => {
+    document.documentElement.scrollTop = 0
     selectionModal.style.display = 'block'
     document.body.style.overflow = 'hidden'
     closeSelectionModal.addEventListener('click', function() {
         selectionModal.style.display = 'none'
         document.body.style.overflow = 'visible'
     })
-})
+}
+
+backButton.addEventListener('click', mainModal)
 
 labels.forEach((label, index) => {
     label.addEventListener('click', function() {
@@ -71,4 +83,21 @@ radioBtns.forEach((btn, i) => {
             modalCards[i].style.border = '1px solid rgb(235, 235, 235)'
         }
     })
+})
+
+selectBtns.forEach(btn => {
+    btn.addEventListener('click', mainModal)
+})
+
+continueBtns.forEach(btn => {
+    btn.addEventListener('click', function() {
+        selectionModal.style.display = 'none'
+        successModal.style.display = 'block'
+         document.body.style.overflow = 'hidden'
+    })
+})
+
+finishBtn.addEventListener('click', function() {
+    successModal.style.display = 'none'
+    document.body.style.overflow = 'visible'
 })
