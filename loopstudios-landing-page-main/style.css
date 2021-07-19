@@ -97,3 +97,68 @@ nav {
   color: hsl(0, 0%, 55%);
   line-height: 1.9;
 }
+
+.our-creations {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+}
+
+.creations-heading {
+  display: flex;
+  justify-content: space-between;
+}
+
+.creations-heading h2 {
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 3rem;
+}
+
+button {
+  background-color: hsl(0, 0%, 100%);
+  text-transform: uppercase;
+  color: hsl(0, 0%, 0%);
+  font-weight: bold;
+  border: 2px solid hsl(0, 0%, 41%);
+  padding: 0 3rem;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.card h3 {
+  color: hsl(0, 0%, 100%);
+  position: absolute;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  left: 2rem;
+  bottom: 2rem;
+  right: 3rem;
+}
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: hsl(0, 0%, 0%);
+  opacity: 0.3;
+}
+
+.creations {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
