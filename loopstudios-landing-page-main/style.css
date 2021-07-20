@@ -13,7 +13,23 @@ body {
 }
 li {
   list-style: none;
+  position: relative;
 }
+
+li::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 50%;
+  left: 25%;
+  bottom: -50%;
+  transition: 0.2s ease-in-out;
+}
+
+li:hover::after {
+  background-color: white;
+}
+
 a {
   text-decoration: none;
   color: hsl(0, 0%, 100%);
@@ -102,6 +118,8 @@ nav {
   display: flex;
   flex-direction: column;
   row-gap: 2rem;
+  margin-top: 7rem;
+  margin-bottom: 10rem;
 }
 
 .creations-heading {
@@ -123,10 +141,18 @@ button {
   font-weight: bold;
   border: 2px solid hsl(0, 0%, 41%);
   padding: 0 3rem;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: hsl(0, 0%, 0%);
+  color: hsl(0, 0%, 100%);
 }
 
 .card {
   position: relative;
+  cursor: pointer;
 }
 
 .card img {
@@ -141,10 +167,10 @@ button {
   text-transform: uppercase;
   font-family: "Josefin Sans", sans-serif;
   font-weight: 300;
-  font-size: 2rem;
-  left: 2rem;
-  bottom: 2rem;
-  right: 3rem;
+  font-size: 2.5rem;
+  left: 15%;
+  bottom: 7%;
+  transition: 0.2s ease-in-out;
 }
 .overlay {
   position: absolute;
@@ -154,6 +180,16 @@ button {
   width: 100%;
   background-color: hsl(0, 0%, 0%);
   opacity: 0.3;
+  transition: 0.2s ease-in-out;
+}
+
+.card:hover .overlay {
+  background-color: hsl(0, 0%, 100%);
+  opacity: 0.7;
+}
+
+.card:hover h3 {
+  color: hsl(0, 0%, 0%);
 }
 
 .creations {
@@ -161,4 +197,44 @@ button {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 2rem;
+}
+
+footer {
+  height: fit-content;
+  padding: 3rem 0;
+  background-color: hsl(0, 0%, 0%);
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-left {
+  width: 30%;
+}
+
+.footer-link-container ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.social-icons svg {
+  margin-left: 1rem;
+}
+
+.copyright {
+  color: hsl(0, 0%, 55%);
 }
