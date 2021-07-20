@@ -231,8 +231,24 @@ footer {
   justify-content: flex-end;
 }
 
-.social-icons svg {
-  margin-left: 1rem;
+.social-icons li {
+  cursor: pointer;
+  position: relative;
+  margin-left: 2rem;
+}
+
+.social-icons li::after {
+  content: "";
+
+  height: 2px;
+  width: 50%;
+  position: absolute;
+  left: 25%;
+  bottom: -50%;
+}
+
+.social-icons li:hover::after {
+  background-color: white;
 }
 
 .copyright {
