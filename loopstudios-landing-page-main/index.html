@@ -31,6 +31,13 @@
             <li><a href="#">Support</a></li>
           </ul>
         </div>
+        <div class="hamburger">
+          <svg width="24" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="#FFF" fill-rule="evenodd">
+              <path d="M0 0h24v2H0zM0 7h24v2H0zM0 14h24v2H0z" />
+            </g>
+          </svg>
+        </div>
       </nav>
       <div class="intro">
         
@@ -41,7 +48,13 @@
 
   <div class="main-about container">
     <div class="main-img">
-      <img src="./images/desktop/image-interactive.jpg" alt="interactive-img">
+      <img 
+        src="./images/mobile/image-interactive.jpg"
+        srcset="./images/mobile/image-interactive.jpg 654w,
+                ./images/desktop/image-interactive.jpg 731w"
+        sizes="(max-width: 900px) 90vw,
+        800px"     
+        alt="interactive-img">
     </div>
     <div class="main-text">
       <h2>The leader in interactive VR</h2>

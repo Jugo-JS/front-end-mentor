@@ -8,8 +8,7 @@ body {
   font-size: 15px;
   font-weight: 400;
   background-color: hsl(0, 0%, 100%);
-  /* font-family: "Josefin Sans", sans-serif;
-  font-weight: 300; */
+  overflow-x: hidden;
 }
 li {
   list-style: none;
@@ -64,6 +63,10 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.hamburger {
+  display: none;
 }
 
 .intro {
@@ -253,4 +256,35 @@ footer {
 
 .copyright {
   color: hsl(0, 0%, 55%);
+}
+
+@media (max-width: 900px) {
+  .hero {
+    height: fit-content;
+  }
+  .link-container {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+  .container {
+    width: 90vw;
+  }
+  .intro {
+    font-size: 3rem;
+  }
+  .main-about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 3rem;
+  }
+
+  .main-text {
+    width: 80%;
+    padding: 0;
+    text-align: center;
+  }
 }
