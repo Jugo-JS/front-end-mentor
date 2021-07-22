@@ -162,6 +162,7 @@ button:hover {
   position: relative;
   cursor: pointer;
   height: 500px;
+  min-width: fit-content;
 }
 
 .card h3 {
@@ -305,7 +306,38 @@ footer {
   color: hsl(0, 0%, 55%);
 }
 
-@media (max-width: 900px) {
+/* MOBILE MENU */
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: hsl(0, 0%, 0%);
+  padding: 2rem;
+  transform: translateX(-100%);
+}
+
+.mobile-menu-heading {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3rem;
+  height: 20%;
+}
+
+.mobile-menu-links {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem;
+  height: 80%;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+/* MOBILE MENU END */
+
+@media (max-width: 1100px) {
   .hero {
     background-image: url(./images/mobile/image-hero.jpg);
     height: fit-content;
@@ -365,6 +397,7 @@ footer {
   }
 
   .card h3 {
+    font-size: 2rem;
     left: 5%;
     bottom: 10%;
   }
