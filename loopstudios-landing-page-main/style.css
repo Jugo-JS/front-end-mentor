@@ -39,6 +39,8 @@ a {
   margin: 0 auto;
 }
 
+/* HERO START */
+
 .hero {
   width: 100vw;
   height: fit-content;
@@ -67,6 +69,7 @@ nav {
 
 .hamburger {
   display: none;
+  cursor: pointer;
 }
 
 .intro {
@@ -80,6 +83,10 @@ nav {
   padding: 3rem;
   margin-top: 4rem;
 }
+
+/* HERO END */
+
+/* MAIN START */
 
 .main-about {
   padding: 6rem 0;
@@ -116,6 +123,8 @@ nav {
   color: hsl(0, 0%, 55%);
   line-height: 1.9;
 }
+
+/* GRID START */
 
 .our-creations {
   display: grid;
@@ -246,6 +255,10 @@ button:hover {
   gap: 2rem;
 }
 
+/* GRID END */
+
+/* FOOTER START */
+
 footer {
   height: fit-content;
   padding: 3rem 0;
@@ -306,6 +319,8 @@ footer {
   color: hsl(0, 0%, 55%);
 }
 
+/* FOOTER END */
+
 /* MOBILE MENU */
 .mobile-menu {
   position: fixed;
@@ -314,7 +329,8 @@ footer {
   height: 100vh;
   width: 100vw;
   background-color: hsl(0, 0%, 0%);
-  padding: 2rem;
+  padding-top: 2rem;
+  transition: 0.2s ease-in-out;
   transform: translateX(-100%);
 }
 
@@ -323,6 +339,12 @@ footer {
   justify-content: space-between;
   margin-bottom: 3rem;
   height: 20%;
+  padding: 0 2rem;
+}
+
+.close-menu {
+  cursor: pointer;
+  height: fit-content;
 }
 
 .mobile-menu-links {
@@ -334,6 +356,17 @@ footer {
   font-weight: 300;
   font-size: 2rem;
   text-transform: uppercase;
+}
+
+.mobile-menu-links a {
+  padding: 0.5rem 2rem;
+  height: 3rem;
+  transition: 0.2s ease-in-out;
+}
+
+.mobile-menu-links a:hover {
+  color: hsl(0, 0%, 0%);
+  background-color: hsl(0, 0%, 100%);
 }
 /* MOBILE MENU END */
 
