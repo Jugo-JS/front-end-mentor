@@ -19,6 +19,11 @@ h5,
 h6 {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
+  color: hsl(192, 100%, 9%);
+}
+
+p {
+  color: hsl(192, 100%, 9%);
 }
 
 button {
@@ -215,6 +220,7 @@ nav {
 }
 
 .main-action h2 {
+  font-size: 2rem;
   margin-bottom: 2rem;
 }
 
@@ -409,9 +415,9 @@ footer::before {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 150px;
+    height: 175px;
     position: absolute;
-    top: -25%;
+    top: -28%;
     left: 0;
   }
 
@@ -421,9 +427,9 @@ footer::before {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 75px;
+    height: 150px;
     position: absolute;
-    bottom: -10%;
+    bottom: -20%;
     left: 0;
   }
 
@@ -542,5 +548,9 @@ footer::before {
 
   .footer-left p {
     width: 90%;
+  }
+
+  .warning {
+    bottom: 20%;
   }
 }
