@@ -208,8 +208,9 @@ nav {
   width: 100%;
   height: 200px;
   position: absolute;
-  bottom: -50%;
+  bottom: -55%;
   left: 0;
+  z-index: -10;
 }
 
 .main-action {
@@ -476,7 +477,7 @@ footer::before {
     width: 100%;
     height: 175px;
     position: absolute;
-    top: -19%;
+    top: -21%;
     left: 0;
   }
 
@@ -484,11 +485,11 @@ footer::before {
     content: "";
     background-image: url(./images/bg-section-bottom-mobile-2.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
-    height: 175px;
+    height: 200px;
     position: absolute;
-    bottom: -30%;
+    bottom: -35%;
     left: 0;
   }
 
