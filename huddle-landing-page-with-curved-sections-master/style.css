@@ -161,23 +161,24 @@ nav {
   content: "";
   background-image: url(./images/bg-section-top-desktop-1.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  height: 200px;
+  height: 150px;
   position: absolute;
-  top: -32%;
+  top: -125px;
   left: 0;
+  z-index: -10;
 }
 
 .main-blue::after {
   content: "";
   background-image: url(./images/bg-section-bottom-desktop-1.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  height: 200px;
+  height: 150px;
   position: absolute;
-  bottom: -50%;
+  bottom: -100px;
   left: 0;
   z-index: -10;
 }
@@ -192,23 +193,24 @@ nav {
   content: "";
   background-image: url(./images/bg-section-top-desktop-2.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  height: 200px;
+  height: 150px;
   position: absolute;
-  top: -39%;
+  top: -125px;
   left: 0;
+  z-index: -10;
 }
 
 .main-blue-2::after {
   content: "";
   background-image: url(./images/bg-section-bottom-desktop-2.svg);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 100%;
-  height: 200px;
+  height: 150px;
   position: absolute;
-  bottom: -55%;
+  bottom: -150px;
   left: 0;
   z-index: -10;
 }
@@ -241,8 +243,9 @@ footer::before {
   width: 100%;
   height: 150px;
   position: absolute;
-  top: -40%;
+  top: -150px;
   left: 0;
+  z-index: -10;
 }
 
 .footer-container {
@@ -418,7 +421,7 @@ footer::before {
     width: 100%;
     height: 175px;
     position: absolute;
-    top: -28%;
+    top: -175px;
     left: 0;
   }
 
@@ -428,10 +431,11 @@ footer::before {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 150px;
+    height: 100px;
     position: absolute;
-    bottom: -20%;
+    bottom: -100px;
     left: 0;
+    z-index: -10;
   }
 
   .container {
@@ -473,12 +477,13 @@ footer::before {
     content: "";
     background-image: url(./images/bg-section-top-mobile-2.svg);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     width: 100%;
     height: 175px;
     position: absolute;
-    top: -21%;
+    top: -150px;
     left: 0;
+    z-index: -10;
   }
 
   .main-blue-2::after {
@@ -489,7 +494,7 @@ footer::before {
     width: 100%;
     height: 200px;
     position: absolute;
-    bottom: -35%;
+    bottom: -175px;
     left: 0;
   }
 
@@ -503,9 +508,9 @@ footer::before {
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 200px;
+    height: 75px;
     position: absolute;
-    top: -17%;
+    top: -60px;
     left: 0;
   }
 
